@@ -9,7 +9,7 @@ IoTtweet library for www.iottweet.com dashboard using. Internet of Things cloud 
 
 ### How to starting ?</br>
 <b>[step 1.]</b> </br>
-  Signup account with www.iottweet.com/signup</br>
+  Signup account with http://www.iottweet.com/signup/register.php</br>
  
 <b>[step 2.]</b></br>
   Prepare  your IoT device and install  2 library as below into your computer.</br>
