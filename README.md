@@ -32,6 +32,7 @@ Please replace "blank space" with %20
 <b>[step 4.]</b></br>
   Let's tweet !!</br>
   See data on your dashboard and control your IoT from there.</br></br>
+  [![IoTtweet promote image.jpg](http://s14.postimg.org/j08jnigkh/Io_Ttweet_promote_image.jpg)](http://postimg.org/image/ahz3j6a1p/)
 
 <b>Find out more at</b> : http://www.iottweet.com/getstarted.php</br>
 
