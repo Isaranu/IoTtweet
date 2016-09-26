@@ -14,7 +14,21 @@ IoTtweet library for www.iottweet.com dashboard using. Internet of Things cloud 
 <b>[step 2.]</b></br>
   Prepare  your IoT device and install  2 library as below into your computer.</br>
   2.1) ESP8266WiFi.h library</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Open Arduino IDE on your computer.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Go to <b>preferences</b>.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Add link "http://arduino.esp8266.com/stable/package_esp8266com_index.json" into <b>Board Manager URLs</b>.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Save and re-start Arduino IDE.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Go to <b>Tool > Boards > Boards Manager</b>.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Scroll down and find <i>"esp8266 by ESP8266 community"</i>. This is contained a library of ESP8266WiFi.h.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Click install, and after installed complete, click close.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Restart Arduino IDE again.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Open example, you will see some examples code of ESP8266WiFi.h. And now ready to coding ESP8266.</br>
+
   2.2) IoTtweet.h library (we provided in this GITHUB)</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Download this repository into your computer.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Extract files.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Copy folder name <b>IoTtweet</b> which contained 2 files of <b><u>IoTtweet.h</u></b> and <b><u>IoTtweet.cpp</u></b>, paste this folder at <b>Arduino > libraries</b>.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Restart Arduino IDE, ready to use IoTtweet command.</br>
 
 <b>[step 3.]</b></br>
   Upload example code in this repository and change some parameter to your parameter.</br>
