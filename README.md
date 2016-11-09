@@ -24,7 +24,13 @@ IoTtweet library for www.iottweet.com dashboard using. Internet of Things cloud 
 &nbsp;&nbsp;&nbsp;&nbsp;- Restart Arduino IDE again.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Open example, you will see some examples code of ESP8266WiFi.h. And now ready to coding ESP8266.</br>
 
-  2.2) IoTtweet.h library (we provided in this GITHUB)</br>
+  2.2) ArduinoJson.h library</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Open Arduino IDE on your computer.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Go to Sketch> Include Libraries > Manage Libraries </br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Search "ArduinoJson" in search box, and make install it.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;- Restart Arduino IDE again.</br>
+
+  2.3) IoTtweet.h library (we provided in this GITHUB)</br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Download this repository into your computer.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Extract files.</br>
 &nbsp;&nbsp;&nbsp;&nbsp;- Copy folder name <b>IoTtweet</b> which contained 2 files of <b><u>IoTtweet.h</u></b> and <b><u>IoTtweet.cpp</u></b>, paste this folder at <b>Arduino > libraries</b>.</br>
@@ -46,7 +52,7 @@ Please replace "blank space" with %20
 <b>[step 4.]</b></br>
   Let's tweet !!</br>
   See data on your dashboard and control your IoT from there.</br></br>
-  [![IoTtweet promote image.jpg](http://s14.postimg.org/j08jnigkh/Io_Ttweet_promote_image.jpg)](http://postimg.org/image/ahz3j6a1p/)
+[![dash v3 iottweet.png](https://s16.postimg.org/ohp5o1bh1/dash_v3_iottweet.png)](https://postimg.org/image/lnm0al9ap/)
 
 <b>Find out more at</b> : http://www.iottweet.com/getstarted.php</br>
 
