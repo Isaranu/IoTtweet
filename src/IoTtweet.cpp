@@ -19,7 +19,7 @@ Updated : 2016.Dec.17, 17:31
 
 #define IoTtweet_HOST "api.iottweet.com"
 #define IoTtweet_PORT 80
-#define IoTtweet_libVersion "v0.2.1"
+#define IoTtweet_libVersion "v0.2.9"
 
 //Connect WiFi router
 bool IoTtweet::begin(const char *ssid, const char *passw)
