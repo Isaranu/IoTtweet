@@ -11,6 +11,8 @@ Updated : 2016.Oct.3, 23:00
     >> Release GITHUB : v0.2.0 on 3.Oct, 23:06
     >> Features - Read status of specified switch name
                 - Read status of specified slider name
+Updated : 2016.Dec.17, 17:31
+    >> Release GITHUB : v0.2.1              
 */
 
 #ifndef IoTtweet_h
