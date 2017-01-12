@@ -2,14 +2,14 @@
 (http://s16.postimg.org/3l6hewjet/13895268_1150567671681934_5055496449380358557_n.png)
 
 # IoTtweet
-IoTtweet library for www.iottweet.com dashboard using. Internet of Things cloud data storage and control
+IoTtweet library for https://www.iottweet.com dashboard using. Internet of Things cloud data storage and control
 
 ### What is IoTtweet ?
 -  IoTtweet.com is  web APIs for storage and control your Internet of Things over network. Anywhere, anytime in the world.
 
 ### How to starting ?</br>
 <b>[step 1.]</b> </br>
-  Signup account with http://www.iottweet.com/signup/register.php</br>
+  Signup account with https://www.iottweet.com/signup/register.php</br>
  
 <b>[step 2.]</b></br>
   Prepare  your IoT device and install  2 library as below into your computer.</br>
@@ -54,7 +54,7 @@ Please replace "blank space" with %20
   See data on your dashboard and control your IoT from there.</br></br>
 [![dash v3 iottweet.png](https://s16.postimg.org/ohp5o1bh1/dash_v3_iottweet.png)](https://postimg.org/image/lnm0al9ap/)
 
-<b>Find out more at</b> : http://www.iottweet.com/getstarted.php</br>
+<b>Find out more at</b> : https://www.iottweet.com/getstarted.php</br>
 
 <b>IoTtweet support team</b> :wolf:</br>
 mailto:support@iottweet.com</br>
