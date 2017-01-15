@@ -12,14 +12,19 @@ Updated : 2016.Oct.3, 23:00
     >> Features - Read status of specified switch name
                 - Read status of specified slider name
 Updated : 2016.Dec.17, 17:31
-    >> Release GITHUB : v0.2.9                 
+    >> Release GITHUB : v0.2.9
+
+Updated : 2017.Jan.15, 22:01
+    >> Able sending tweet as string type.
+    >> Able tweet by have whitespace string.
+    >> Release GITHUB : v0.3.0
 */
 
 #include "IoTtweet.h"
 
 #define IoTtweet_HOST "api.iottweet.com"
 #define IoTtweet_PORT 80
-#define IoTtweet_libVersion "v0.2.9"
+#define IoTtweet_libVersion "v0.3.0B"
 
 //Connect WiFi router
 bool IoTtweet::begin(const char *ssid, const char *passw)
@@ -53,7 +58,7 @@ bool IoTtweet::begin(const char *ssid, const char *passw)
 }
 
 //Connect to api.iottweet.com & send data to dashboard
-String IoTtweet::WriteDashboard(const char *userid, const char *key, float slot0, float slot1, float slot2, float slot3, const char *tw, const char *twpb)
+String IoTtweet::WriteDashboard(const char *userid, const char *key, float slot0, float slot1, float slot2, float slot3, String tw, String twpb)
 {
     //Transfer variable
     _userid = userid;
@@ -64,6 +69,10 @@ String IoTtweet::WriteDashboard(const char *userid, const char *key, float slot0
     _slot3 = slot3;
     _tw = tw;
     _twpb = twpb;
+
+    //whitespace string replace to %20
+    _tw.replace(" ","%20");
+    _twpb.replace(" ","%20");
 
     //Create connection TCP to api.iottweet.com
     WiFiClient client;
