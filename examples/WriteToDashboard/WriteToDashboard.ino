@@ -15,9 +15,9 @@ const char *key = "your_registered_IoT_device_key";     //IoTtweet registered de
 const char *ssid = "your_wifi_ssid";                    //Your-WiFi-router-SSID
 const char *password = "your_wifi_password";            //Your-WiFi-password
 
-float data0, data1, data2, data3;                               //Your sending data variable.
-const char *private_tweet = "Hello%20World";                    //Your private tweet meassage to dashboard
-const char *public_tweet = "I%20am%20Internet%20of%20Things";   //Your public tweet message to dashboard
+float data0, data1, data2, data3;                        //Your sending data variable.
+String private_tweet = "Hello World";                    //Your private tweet meassage to dashboard
+String public_tweet = "I am Internet of Things";         //Your public tweet message to dashboard
 
 IoTtweet myiot;  //naming your devices
 
