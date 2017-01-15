@@ -12,7 +12,12 @@ Updated : 2016.Oct.3, 23:00
     >> Features - Read status of specified switch name
                 - Read status of specified slider name
 Updated : 2016.Dec.17, 17:31
-    >> Release GITHUB : v0.2.9              
+    >> Release GITHUB : v0.2.9
+
+Updated : 2017.Jan.15, 22:01
+    >> Able sending tweet as string type.
+    >> Able tweet by have whitespace string.
+    >> Release GITHUB : v0.3.0
 */
 
 #ifndef IoTtweet_h
@@ -28,7 +33,7 @@ class IoTtweet
 public:
   bool begin(const char *ssid, const char *passw);
 
-  String WriteDashboard(const char *userid, const char *key, float slot0, float slot1, float slot2, float slot3, const char *tw, const char *twpb);
+  String WriteDashboard(const char *userid, const char *key, float slot0, float slot1, float slot2, float slot3, String tw, String twpb);
   String ReadControlPanel(const char *userid, const char *key);
   String ReadDigitalSwitch(const char *userid, const char *key, uint8_t sw);
   String getVersion();
@@ -37,7 +42,8 @@ public:
 
 private:
   const char *_ssid, *_passw;
-  const char *_userid, *_key, *_tw, *_twpb;
+  const char *_userid, *_key;
+  String _tw, _twpb;
   float _slot0, _slot1, _slot2, _slot3;
   const char *_libversion;
   String _str, _response, _controlpanelstatus;
@@ -49,3 +55,4 @@ private:
 };
 
 #endif
+
