@@ -11,10 +11,10 @@
 #include <ESP8266WiFi.h>
 #include <IoTtweet.h>
 
-const char *userid = "000031";            /*IoTtweet account user ID (6 digits, included zeor pre-fix)*/
-const char *key = "h5fg1c0qhdu9";     /*IoTtweet registered device key in "MY IOT Garage"*/
-const char *ssid = "ISARANU";                    /*Your-WiFi-router-SSID*/
-const char *password = "4502160000";            /*Your-WiFi-password*/
+const char *userid = "your-user-id";            /*IoTtweet account user ID (6 digits, included zeor pre-fix)*/
+const char *key = "your-user-key";     /*IoTtweet registered device key in "MY IOT Garage"*/
+const char *ssid = "your-ssid";                    /*Your-WiFi-router-SSID*/
+const char *password = "your-wifi-password";            /*Your-WiFi-password*/
 
 IoTtweet myiot;  /*naming your devices*/
 
