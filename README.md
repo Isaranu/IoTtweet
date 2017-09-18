@@ -1,4 +1,4 @@
-(https://www.iottweet.com/img/Logo_Iottweet_official.png)
+[![Logo_Iottweet_official.png](https://www.iottweet.com/img/Logo_Iottweet_official.png)]
 
 # IoTtweet
 IoTtweet library for https://www.iottweet.com dashboard using. Internet of Things cloud data storage and control
