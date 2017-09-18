@@ -1,5 +1,4 @@
-![13895268_1150567671681934_5055496449380358557_n.png]
-(http://s16.postimg.org/3l6hewjet/13895268_1150567671681934_5055496449380358557_n.png)
+(https://www.iottweet.com/img/Logo_Iottweet_official.png)
 
 # IoTtweet
 IoTtweet library for https://www.iottweet.com dashboard using. Internet of Things cloud data storage and control
