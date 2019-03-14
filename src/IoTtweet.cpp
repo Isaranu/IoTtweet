@@ -18,13 +18,17 @@ Updated : 2017.Jan.15, 22:01
     >> Able sending tweet as string type.
     >> Able tweet by have whitespace string.
     >> Release GITHUB : v0.3.0
+
+Updated : 2019.Mar.14, 17:42
+    >> Modified code to compatible with ArduinoJson.h version 6+
+    >> Release GITHUB : v1.0.0
 */
 
 #include "IoTtweet.h"
 
 #define IoTtweet_HOST "api.iottweet.com"
 #define IoTtweet_PORT 80
-#define IoTtweet_libVersion "v0.3.0B"
+#define IoTtweet_libVersion "v1.0.0"
 
 //Connect WiFi router
 bool IoTtweet::begin(const char *ssid, const char *passw)
@@ -136,33 +140,36 @@ String IoTtweet::ReadControlPanel(const char *userid, const char *key)
     //Push data to api.iottweet.com
     client.print(_str);
 
+    delay(50);
+
     //Check response back
     while(client.available()){
       _controlpanelstatus = client.readStringUntil('\r');
     }
 
     //--------- Start parse json message ---------------
-    StaticJsonBuffer<2000> jsonBuffer;
-    JsonObject& _root = jsonBuffer.parseObject(_controlpanelstatus);
+    DynamicJsonDocument doc(1024);
+    auto error = deserializeJson(doc, _controlpanelstatus);
 
-    if (!_root.success())
-  {
-    Serial.println("parseObject() failed");
+  if (error) {
+    Serial.print(F("deserializeJson() failed with code "));
+    Serial.println(error.c_str());
+    return "deserializeJson() failed with code ";
   }
 
-   _sw1status = _root["sw1"];
-   _sw2status = _root["sw2"];
-   _sw3status = _root["sw3"];
-   _sw4status = _root["sw4"];
-   _sw5status = _root["sw5"];
+   _sw1status = doc["sw1"];
+   _sw2status = doc["sw2"];
+   _sw3status = doc["sw3"];
+   _sw4status = doc["sw4"];
+   _sw5status = doc["sw5"];
 
-   _sl1status = _root["slide1"];
+   _sl1status = doc["slide1"];
    f_sl1status = String(_sl1status).toFloat();
 
-   _sl2status = _root["slide2"];
+   _sl2status = doc["slide2"];
    f_sl2status = String(_sl2status).toFloat();
 
-   _sl3status = _root["slide3"];
+   _sl3status = doc["slide3"];
    f_sl3status = String(_sl3status).toFloat();
 
    _allcontrol = "{";
@@ -222,25 +229,28 @@ String IoTtweet::ReadDigitalSwitch(const char *userid, const char *key, uint8_t 
     //Push data to api.iottweet.com
     client.print(_str);
 
+    delay(50);
+
     //Check response back
     while(client.available()){
       _controlpanelstatus = client.readStringUntil('\r');
     }
 
     //--------- Start parse json message ---------------
-    StaticJsonBuffer<2000> jsonBuffer;
-    JsonObject& _root = jsonBuffer.parseObject(_controlpanelstatus);
+    DynamicJsonDocument doc(1024);
+    auto error = deserializeJson(doc, _controlpanelstatus);
 
-    if (!_root.success())
-  {
-    Serial.println("parseObject() failed");
+  if (error) {
+    Serial.print(F("deserializeJson() failed with code "));
+    Serial.println(error.c_str());
+    return "deserializeJson() failed with code ";
   }
 
-   _sw1status = _root["sw1"];
-   _sw2status = _root["sw2"];
-   _sw3status = _root["sw3"];
-   _sw4status = _root["sw4"];
-   _sw5status = _root["sw5"];
+   _sw1status = doc["sw1"];
+   _sw2status = doc["sw2"];
+   _sw3status = doc["sw3"];
+   _sw4status = doc["sw4"];
+   _sw5status = doc["sw5"];
 
    switch(_sw){
      case 1:
@@ -289,27 +299,29 @@ float IoTtweet::ReadAnalogSlider(const char *userid, const char *key, uint8_t sl
     //Push data to api.iottweet.com
     client.print(_str);
 
+    delay(50);
+
     //Check response back
     while(client.available()){
       _controlpanelstatus = client.readStringUntil('\r');
     }
 
     //--------- Start parse json message ---------------
-    StaticJsonBuffer<2000> jsonBuffer;
-    JsonObject& _root = jsonBuffer.parseObject(_controlpanelstatus);
+    DynamicJsonDocument doc(1024);
+    auto error = deserializeJson(doc, _controlpanelstatus);
 
-    if (!_root.success())
-  {
-    Serial.println("parseObject() failed");
+  if (error) {
+    Serial.print(F("deserializeJson() failed with code "));
+    Serial.println(error.c_str());
   }
 
-   _sl1status = _root["slide1"];
+   _sl1status = doc["slide1"];
    f_sl1status = String(_sl1status).toFloat();
 
-   _sl2status = _root["slide2"];
+   _sl2status = doc["slide2"];
    f_sl2status = String(_sl2status).toFloat();
 
-   _sl3status = _root["slide3"];
+   _sl3status = doc["slide3"];
    f_sl3status = String(_sl3status).toFloat();
 
    switch(_slider){
