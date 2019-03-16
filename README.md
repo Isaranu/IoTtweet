@@ -2,7 +2,7 @@
 <br>
 <br>
 ![alt_text](https://img.shields.io/badge/bulid-passing-brightgreen.svg "bulidpassing")
-![alt_text](https://img.shields.io/badge/Compatible-ESP8266-lightblue.svg "bulidpassing")
+![alt_text](https://img.shields.io/badge/Compatible-ESP8266-blue.svg "bulidpassing")
 ![alt_text](https://img.shields.io/badge/Make_with-&nbsp;&#x1F5A4;-pink.svg "bulidpassing")
 <br>
 <br>
