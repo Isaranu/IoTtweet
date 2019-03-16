@@ -1,5 +1,11 @@
-[![Logo_Iottweet_official.png](https://www.iottweet.com/img/Logo_Iottweet_official.png)]
-
+![Logo_Iottweet_official.png](https://www.iottweet.com/img/Logo_Iottweet_official.png)
+<br>
+<br>
+![alt_text](https://img.shields.io/badge/bulid-passing-brightgreen.svg "bulidpassing")
+![alt_text](https://img.shields.io/badge/Compatible-ESP8266-lightblue.svg "bulidpassing")
+![alt_text](https://img.shields.io/badge/Make_with-&nbsp;&#x1F5A4;-pink.svg "bulidpassing")
+<br>
+<br>
 # IoTtweet
 IoTtweet library for https://www.iottweet.com dashboard using. Internet of Things cloud data storage and control
 
